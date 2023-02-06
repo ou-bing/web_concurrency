@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "web-concurrency"
+version = "0.1.0"
+description = ""
+authors = ["欧冰 <bing.ou@outlook.com>"]
+readme = "README.md"
+packages = [{include = "web_concurrency"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.1.6"
+gunicorn = "^20.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple"
