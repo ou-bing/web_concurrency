@@ -1,8 +1,14 @@
 --extra-index-url https://mirrors.aliyun.com/pypi/simple
 
 asgiref==3.6.0 ; python_version >= "3.11" and python_version < "4.0"
+cffi==1.15.1 ; platform_python_implementation == "CPython" and sys_platform == "win32" and python_version >= "3.11" and python_version < "4.0"
 django==4.1.6 ; python_version >= "3.11" and python_version < "4.0"
+gevent==22.10.2 ; python_version >= "3.11" and python_version < "4.0"
+greenlet==2.0.2 ; python_version >= "3.11" and python_version < "4.0" and platform_python_implementation == "CPython"
 gunicorn==20.1.0 ; python_version >= "3.11" and python_version < "4.0"
+pycparser==2.21 ; platform_python_implementation == "CPython" and sys_platform == "win32" and python_version >= "3.11" and python_version < "4.0"
 setuptools==67.1.0 ; python_version >= "3.11" and python_version < "4.0"
 sqlparse==0.4.3 ; python_version >= "3.11" and python_version < "4.0"
 tzdata==2022.7 ; python_version >= "3.11" and python_version < "4.0" and sys_platform == "win32"
+zope-event==4.6 ; python_version >= "3.11" and python_version < "4.0"
+zope-interface==5.5.2 ; python_version >= "3.11" and python_version < "4.0"

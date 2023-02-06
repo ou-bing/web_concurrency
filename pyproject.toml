@@ -10,6 +10,7 @@ packages = [{include = "web_concurrency"}]
 python = "^3.11"
 django = "^4.1.6"
 gunicorn = "^20.1.0"
+gevent = "^22.10.2"
 
 
 [build-system]
