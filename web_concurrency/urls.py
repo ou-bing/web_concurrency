@@ -21,7 +21,11 @@ from django.urls import path
 from django.http import HttpResponse
 
 
-def test(request):
+def test1(request):
+    return HttpResponse("hello world")
+
+
+def test2(request):
     tmp = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     if choice(tmp) >= 9:
         time.sleep(0.5)
@@ -33,5 +37,5 @@ def test(request):
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("test/", test),
+    path("test2/", test2),
 ]
