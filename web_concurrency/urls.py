@@ -25,6 +25,11 @@ def test_base(request):
     return HttpResponse("hello world")
 
 
+def test_io(request):
+    time.sleep(1)
+    return HttpResponse("hello world")
+
+
 def test_p90(request):
     tmp = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     if choice(tmp) >= 9:
@@ -36,5 +41,6 @@ def test_p90(request):
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("test_base/", test_base),
+    path("test_io/", test_io),
     path("test_p90/", test_p90),
 ]
